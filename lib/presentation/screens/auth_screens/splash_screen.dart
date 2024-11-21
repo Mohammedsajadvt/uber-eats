@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:ubereats/core/constants/app_images.dart';
 
 import '../../../core/constants/app_colors.dart';
 
 class SplashScreen extends StatelessWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   void navigateToHome(BuildContext context) {
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, '/login'); // Replace '/home' with the route of the next screen
+      Navigator.pushReplacementNamed(context, '/login'); 
     });
   }
 
@@ -15,13 +16,10 @@ class SplashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((_) => navigateToHome(context));
 
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor: AppColor.primaryGreen,
       body: Center(
-        child: Text(
-          'Food Eats',
-          style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
-        ),
+        child: Image.asset(AppImage.logo)
       ),
     );
   }
