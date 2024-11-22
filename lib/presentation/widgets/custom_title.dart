@@ -13,7 +13,8 @@ class CustomTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(title,style: TextStyle(color: AppColor.black,fontSize:ResponsiveHelper.screenHeight(context) * 0.030),),
+        Text(title,style: TextStyle(color: AppColor.black,fontSize:ResponsiveHelper.screenHeight(context) * 0.030),textAlign: TextAlign.justify,),
+
       ],
     );
   }

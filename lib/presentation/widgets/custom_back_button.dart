@@ -9,12 +9,8 @@ class CustomBackButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: (){
-      },
-      child: const Row(children: [
-        CircleAvatar(radius: 25,backgroundColor: AppColor.mercury,child: Icon(Icons.arrow_back),)
-      ],),
-    );
+    return const Row(children: [
+      CircleAvatar(radius: 25,backgroundColor: AppColor.mercury,child: Icon(Icons.arrow_back),)
+    ],);
   }
 }

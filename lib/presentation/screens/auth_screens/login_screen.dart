@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ubereats/core/constants/app_colors.dart';
 import 'package:ubereats/core/constants/app_images.dart';
@@ -24,7 +23,9 @@ class LoginScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const CustomBackButton(),
+                GestureDetector(onTap: (){
+                  Navigator.pushNamed(context, '/');
+                },child: const CustomBackButton()),
                 SizedBox(
                   height: ResponsiveHelper.screenHeight(context) * 0.030,
                 ),
@@ -38,10 +39,15 @@ class LoginScreen extends StatelessWidget {
                 SizedBox(
                   height: ResponsiveHelper.screenHeight(context) * 0.020,
                 ),
-                CustomButton(
-                  title: 'Continue',
-                  color: AppColor.primaryGreen,
-                  textColor: AppColor.secondary,
+                GestureDetector(
+                  onTap: (){
+                    Navigator.pushNamed(context, '/otp');
+                  },
+                  child: CustomButton(
+                    title: 'Continue',
+                    color: AppColor.primaryGreen,
+                    textColor: AppColor.secondary,
+                  ),
                 ),
                 SizedBox(
                   height: ResponsiveHelper.screenHeight(context) * 0.030,

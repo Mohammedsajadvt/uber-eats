@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ubereats/core/routes/app_routes.dart';
+import 'package:ubereats/presentation/screens/auth_screens/otp_screen.dart';
 import '../../presentation/screens/auth_screens/login_screen.dart';
 import '../../presentation/screens/auth_screens/splash_screen.dart';
 
@@ -12,6 +13,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => SplashScreen());
       case AppRoutes.login:
         return MaterialPageRoute(builder: (_) => LoginScreen());
+      case AppRoutes.otp:
+        return MaterialPageRoute(builder: (_) => OtpScreen()); 
       default:
         return _errorRoute();
     }

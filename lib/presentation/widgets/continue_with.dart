@@ -12,15 +12,12 @@ class ContinueWithButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: (){},
-      child: Container(height:ResponsiveHelper.screenHeight(context) *0.064,width: double.infinity,decoration: BoxDecoration(color: AppColor.mercury,borderRadius: BorderRadius.circular(10)),child: Center(child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-        Image.asset(icon,height:ResponsiveHelper.screenHeight(context) * 0.030,),
-        SizedBox(width:ResponsiveHelper.screenWidth(context) * 0.02,),
-        Text(title,style: TextStyle(fontSize:ResponsiveHelper.screenHeight(context) * 0.017,fontWeight: FontWeight.bold),)
-      ],)),),
-    );
+    return Container(height:ResponsiveHelper.screenHeight(context) *0.064,width: double.infinity,decoration: BoxDecoration(color: AppColor.mercury,borderRadius: BorderRadius.circular(10)),child: Center(child: Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+      Image.asset(icon,height:ResponsiveHelper.screenHeight(context) * 0.030,),
+      SizedBox(width:ResponsiveHelper.screenWidth(context) * 0.02,),
+      Text(title,style: TextStyle(fontSize:ResponsiveHelper.screenHeight(context) * 0.017,fontWeight: FontWeight.bold),)
+    ],)),);
   }
 }
