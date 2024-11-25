@@ -39,13 +39,16 @@ class OtpScreen extends StatelessWidget {
                   SizedBox(
                   height: ResponsiveHelper.screenHeight(context) * 0.030,
                 ),
-              CustomButton(title: 'Continue', color: AppColor.primaryGreen, textColor: AppColor.secondary),
+              GestureDetector(onTap: (){
+                Navigator.pushNamed(context,'/email');
+              },child: CustomButton(title: 'Continue', color: AppColor.primaryGreen, textColor: AppColor.secondary)),
                   SizedBox(
                   height: ResponsiveHelper.screenHeight(context) * 0.020,
                 ),
               Row(
                 children: [
-                  GestureDetector(onTap: (){},child: Container(decoration: BoxDecoration(color: AppColor.mercury,borderRadius: BorderRadius.circular(5)),child: Center(child: Text('Resend code via SMS'),),width:ResponsiveHelper.screenHeight(context) *0.200,height:ResponsiveHelper.screenHeight(context) *0.030,)),
+                  GestureDetector(onTap: (){
+                  },child: Container(decoration: BoxDecoration(color: AppColor.mercury,borderRadius: BorderRadius.circular(5)),child: Center(child: Text('Resend code via SMS'),),width:ResponsiveHelper.screenHeight(context) *0.200,height:ResponsiveHelper.screenHeight(context) *0.030,)),
                 ],
               )   
             ],

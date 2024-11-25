@@ -36,7 +36,7 @@ borderSide: BorderSide(color: AppColor.textFieldPrimry)),
                             ),
                           ),
               counterText: "", 
-              fillColor: Colors.grey.shade200,
+              fillColor:  AppColor.textFieldPrimry,
               filled: true,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10),
