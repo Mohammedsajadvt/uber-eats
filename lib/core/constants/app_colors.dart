@@ -14,6 +14,7 @@ class AppColor {
   static const grey = Color(0xff585858);
   static const star = Color(0xffFFC700);
   static const red = Color(0xffFF0000);
+  static const blue = Color(0xff2855F4);
 
   // TextFormField
   static const textFieldPrimry = Color(0xffE1E1E1);
