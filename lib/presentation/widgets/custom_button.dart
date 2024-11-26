@@ -6,7 +6,7 @@ class CustomButton extends StatelessWidget {
   final Color color;
   final Color textColor;
   const CustomButton({
-    super.key, required this.title, required this.color, required this.textColor,
+    super.key, required this.title, required this.color, required this.textColor, 
   });
 
   @override

@@ -63,7 +63,9 @@ class TermsAndConditionScreen extends StatelessWidget {
                  SizedBox(
                   height: ResponsiveHelper.screenHeight(context) * 0.030,
                 ),
-                GestureDetector(onTap: (){},child: CustomButton(title: 'I agree', color: AppColor.primaryGreen, textColor: AppColor.secondary))
+                GestureDetector(onTap: (){
+                  Navigator.pushNamed(context, '/locationallow');
+                },child: CustomButton(title: 'I agree', color: AppColor.primaryGreen, textColor: AppColor.secondary))
               ],
             ),
           ),
