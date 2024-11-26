@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "511810414307",
+    "project_id": "ubereats-eed74",
+    "storage_bucket": "ubereats-eed74.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511810414307:android:4c981863e0be95d51687d6",
+        "android_client_info": {
+          "package_name": "com.example.ubereats"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjCfi2PSIYqPoRecyh75VFu_LfiAW119A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
