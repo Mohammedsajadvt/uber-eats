@@ -6,4 +6,5 @@ class AppImage {
   static const notice = "assets/icons/notice.png";
   static const map = "assets/icons/map.png";
   static const order = "assets/icons/order.png";
+  static const telegram = "assets/icons/telegram.png";
 }

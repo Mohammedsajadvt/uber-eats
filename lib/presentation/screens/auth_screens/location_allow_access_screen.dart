@@ -48,7 +48,9 @@ class LocationAllowAccessScreen extends StatelessWidget {
                   height: ResponsiveHelper.screenHeight(context) * 0.030,
                 ),
                 GestureDetector(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, '/addlocation');
+                    },
                     child: CustomButton(
                         title: 'Allow',
                         color: AppColor.primaryGreen,
@@ -57,7 +59,9 @@ class LocationAllowAccessScreen extends StatelessWidget {
                   height: ResponsiveHelper.screenHeight(context) * 0.015,
                 ),
                 GestureDetector(
-                  onTap: (){},
+                  onTap: (){
+                  
+                  },
                   child: Container(
                     height: 54,
                     width: double.infinity,

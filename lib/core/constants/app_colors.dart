@@ -9,7 +9,7 @@ class AppColor {
 
   // Colors
   static const mercury = Color(0xffE1E1E1);
-  static const lightGreen = Color(0xff8eeed6);
+  static const lightGreen = Color.fromARGB(255, 222, 255, 240);
   static const black = Color(0xff000000);
   static const grey = Color(0xff585858);
   static const star = Color(0xffFFC700);

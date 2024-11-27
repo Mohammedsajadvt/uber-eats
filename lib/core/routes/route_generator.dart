@@ -15,6 +15,7 @@ class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
     switch (settings.name) {
+      // Auth Screens
       case AppRoutes.splash:
         return MaterialPageRoute(builder: (_) => SplashScreen());
       case AppRoutes.login:
