@@ -116,6 +116,7 @@ class AddLocationScreen extends StatelessWidget {
                         padding: EdgeInsets.all(ResponsiveHelper.screenHeight(context) * 0.010),
                         child: GestureDetector(
                           onTap: (){
+                            Navigator.pushNamed(context, '/addressinfo');
                           },
                           child: Row(
                             children: [
