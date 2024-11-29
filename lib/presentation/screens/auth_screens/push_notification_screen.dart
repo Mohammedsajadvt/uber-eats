@@ -35,7 +35,9 @@ class PushNotificationScreen extends StatelessWidget {
                 SizedBox(
                 height: ResponsiveHelper.screenHeight(context) * 0.030,
               ),
-              CustomButton(title: 'Enable push notification ',color: AppColor.primaryGreen,textColor: AppColor.secondary,),
+              GestureDetector(onTap: (){
+                Navigator.pushNamed(context, '/bottomnav');
+              },child: CustomButton(title: 'Enable push notification ',color: AppColor.primaryGreen,textColor: AppColor.secondary,)),
               Align(alignment: Alignment.center,child: TextButton(onPressed: (){}, child: Text('Skip for now',style: TextStyle(color: AppColor.black),)))    
             ],
           ),

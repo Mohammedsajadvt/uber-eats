@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ubereats/presentation/blocs/bloc/country_bloc_event.dart';
-import 'package:ubereats/presentation/blocs/bloc/country_bloc_state.dart';
+import 'package:ubereats/presentation/blocs/country_bloc/country_bloc_event.dart';
+import 'package:ubereats/presentation/blocs/country_bloc/country_bloc_state.dart';
 
 
 class CountryBloc extends Bloc<CountryEvent, CountryState> {

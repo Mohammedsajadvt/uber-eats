@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ubereats/core/constants/app_colors.dart';
 import 'package:ubereats/core/utils/responsive_helper.dart';
-import 'package:ubereats/presentation/blocs/bloc/country_bloc_bloc.dart';
-import 'package:ubereats/presentation/blocs/bloc/country_bloc_event.dart';
-import 'package:ubereats/presentation/blocs/bloc/country_bloc_state.dart';
+import 'package:ubereats/presentation/blocs/country_bloc/country_bloc_bloc.dart';
+import 'package:ubereats/presentation/blocs/country_bloc/country_bloc_event.dart';
+import 'package:ubereats/presentation/blocs/country_bloc/country_bloc_state.dart';
 
 class MobileInputWidget extends StatelessWidget {
   final List<Map<String, String>> countries = [

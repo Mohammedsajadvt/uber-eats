@@ -8,6 +8,7 @@ import 'package:ubereats/presentation/screens/auth_screens/location_allow_access
 import 'package:ubereats/presentation/screens/auth_screens/otp_screen.dart';
 import 'package:ubereats/presentation/screens/auth_screens/push_notification_screen.dart';
 import 'package:ubereats/presentation/screens/auth_screens/terms_and_condition_screen.dart';
+import 'package:ubereats/presentation/widgets/bottom_nav_bar.dart';
 import '../../presentation/screens/auth_screens/login_screen.dart';
 import '../../presentation/screens/auth_screens/splash_screen.dart';
 
@@ -36,6 +37,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => AddressInfoScreen());
       case AppRoutes.pushnotification:
         return MaterialPageRoute(builder: (_) => PushNotificationScreen());
+      case AppRoutes.bottomnav:
+        return MaterialPageRoute(builder: (_) => BottomNavigation());  
       default:
         return _errorRoute();
     }

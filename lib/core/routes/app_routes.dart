@@ -10,4 +10,5 @@ class AppRoutes{
   static const String addlocation = '/addlocation';
   static const String addressinfo = '/addressinfo';
   static const String pushnotification = '/pushnotification';
+  static const String bottomnav = "/bottomnav";
 }
